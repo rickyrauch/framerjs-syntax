@@ -12,8 +12,12 @@
   color: @orange !important;
 }
 
+.list-group .selected::before, .list-tree .selected::before{
+  background-color: #111 !important;
+}
+
 atom-pane:not(.active) {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .tree-view{
@@ -21,8 +25,13 @@ atom-pane:not(.active) {
 }
 
 atom-pane:not(.active) atom-text-editor{
-  background: #111;
+  background: #111 !important;
 }
+
+atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shadow .gutter .line-number.git-line-modified{
+  border-color: @dark-gray !important;
+}
+
 atom-text-editor{
   font-family: "Roboto Mono";
   line-height: 1.7;
