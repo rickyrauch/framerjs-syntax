@@ -1,23 +1,35 @@
 @import "syntax-variables";
 
-atom-text-editor{
-  font-family: "Roboto Mono";
-  font-size: 12px;
-  line-height: 1.7;
-  text-rendering: optimizeLegibility;
-}
-
 .name.icon[data-name$=".svg"].icon-file-text:before, .name.icon[data-name$=".svg"].icon-file-media:before, .name.icon[data-name$=".svg"].icon-book:before{
-  color: @blue;
+  color: @blue !important;
 }
 
 .directory.entry.list-nested-item.status-added > .header.list-item .name.icon.icon-file-directory{
-  color: @green;
+  color: @green !important;
 }
 
-.file.entry.list-item.status-modified .name.icon:before, .file.entry.list-item.status-modified .name.icon, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory:before{
-  color: @orange;
+.directory.entry.list-nested-item.status-modified > .header.list-item:before, .file.entry.list-item.status-modified .name.icon:before, .file.entry.list-item.status-modified .name.icon, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory:before{
+  color: @orange !important;
 }
+
+atom-pane:not(.active) {
+    opacity: 1;
+}
+
+.tree-view{
+  background: #000 !important;
+}
+
+atom-pane:not(.active) atom-text-editor{
+  background: #111;
+}
+atom-text-editor{
+  font-family: "Roboto Mono";
+  line-height: 1.7;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+}
+
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -40,6 +52,8 @@ atom-text-editor, :host {
     color: @syntax-gutter-text-color;
 
     .line-number {
+      // font-size: 11px;
+      color: #333;
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
         color: @syntax-gutter-text-color-selected;
@@ -62,7 +76,7 @@ atom-text-editor, :host {
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @blue;
   }
 
   .selection .region {
@@ -142,6 +156,10 @@ atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shado
   &.other.symbol {
     color: @green;
   }
+}
+
+.important{
+  color: @red !important;
 }
 
 .variable {
@@ -241,7 +259,7 @@ atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shado
   }
 
   &.name.tag {
-    color: @blue;
+    color: @orange;
     // text-decoration: underline;
     &.jade{
       // color: @purple;
@@ -327,8 +345,6 @@ atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shado
     color: @green;
   }
 }
-
-
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
