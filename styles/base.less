@@ -7,6 +7,18 @@ atom-text-editor{
   text-rendering: optimizeLegibility;
 }
 
+.name.icon[data-name$=".svg"].icon-file-text:before, .name.icon[data-name$=".svg"].icon-file-media:before, .name.icon[data-name$=".svg"].icon-book:before{
+  color: @blue;
+}
+
+.directory.entry.list-nested-item.status-added > .header.list-item .name.icon.icon-file-directory{
+  color: @green;
+}
+
+.file.entry.list-item.status-modified .name.icon:before, .file.entry.list-item.status-modified .name.icon, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory, .directory.entry.list-nested-item.status-modified > .header.list-item .name.icon.icon-file-directory:before{
+  color: @orange;
+}
+
 atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
@@ -67,6 +79,10 @@ atom-text-editor .search-results .marker .region,
 atom-text-editor .search-results .marker.current-result .region,
 :host .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
+}
+
+atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shadow .gutter .line-number.git-line-modified{
+  border-color: @light-gray;
 }
 
 .comment {
@@ -225,7 +241,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @orange;
+    color: @blue;
     // text-decoration: underline;
     &.jade{
       // color: @purple;
