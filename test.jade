@@ -1,0 +1,216 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='')
+//if IE 8
+  html.no-js.lt-ie9(lang='')
+// [if gt IE 8] <!
+html.no-js(lang='')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Ricky Rauch
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    //- link(rel="stylesheet", href="//cloud.typography.com/7834932/648306/css/fonts.css")
+
+    link(rel='stylesheet', href='css/normalize.min.css')
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='css/main.css')
+
+    script(src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js")
+    //- script.
+    //-   window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\\/script>')
+    script(src="//cdnjs.cloudflare.com/ajax/libs/slideout/0.1.9/slideout.min.js")
+    script(src='js/main.js')
+
+  body
+
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+
+    .controls.controls-top
+      //- a(href="").account
+
+      a(href="").sandwitch
+        div
+        div
+        div
+
+    //- .controls.controls-bottom
+    //-   a(href="").arrow.arrow-top
+    //-   a(href="").arrow.arrow-down
+
+
+
+
+    //- header.site-header
+    //-   h1 Ricky Rauch
+    //-   h3 Designer
+    //-
+    //- #menu.sidebar
+    //-   .sidebar-header
+    //-     img(src="https://pbs.twimg.com/profile_images/618200087991328772/jCg_pnLJ.jpg")
+    //-     h4 Ricky Rauch
+    //-     p Head Of Design @auth0
+    //-     .social-icons
+    //-       a(href="").fa.fa-github
+    //-       a(href="").fa.fa-medium
+    //-       a(href="").fa.fa-twitter
+    //-
+    //-
+    //-   ul.work-list
+    //-     li
+    //-       a(href="")
+    //-         .canvas-screenshot
+    //-
+    //-     li
+    //-       a(href="")
+    //-         .canvas-screenshot
+    //-
+    //-
+    //-     li
+    //-       a(href="")
+    //-         .canvas-screenshot
+    //-
+    //-
+    //-
+    //- #panel
+    .fullpage
+
+      header.section.fp-auto-height.site-header
+        .container
+          h3 Ricky Rauch, Designer
+          p I'm a designer and developer based out of Buenos Aires, with a penchant for OSS.
+
+          p In the past, I've recently helped design collaborative tools such as DemocracyOS (YC '15) and Gitlab (YC '15), the largest OSS git repository manager.
+
+          p Currently, I'm working at Auth0 as Head of Design, where we build cloud services to eliminate the friction of integrating identity into applications.
+
+
+          .social-icons
+            a(href="")
+              img(src="/img/icon-twitter.svg")
+            a(href="")
+              img(src="/img/icon-medium.svg")
+            a(href="")
+              img(src="/img/icon-github.svg")
+
+
+          //- .contact
+          //-   ul
+          //-     li
+          //-       a(href="#") rickyrauch@gmail.com
+          //-     li
+          //-       a(href="#") @rickyrauch
+          //-
+          //-     li
+          //-       a(href="#") github.com/rickyrauch
+
+      section.item.item-passwordless.section.fp-section
+
+        .slide
+
+
+          .slide-title
+            h2 Passwordless
+            p Product Design
+
+          .ipad-black
+            img(src="/img/work/passwordless/website.png")
+
+
+
+        .slide
+          .slide-title
+            h2 Auth0 Passwordless
+            p UI Design and Development
+
+          .popup
+            h2 Something
+            .popoup-content
+              p Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              p Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              p Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
+
+
+
+          .iphone-6s.iphone-6s-space-gray
+            //- video(src='/img/work/passwordless/movie.mov', autoplay)
+            img(src="/img/work/passwordless/lock-1.png")
+
+          //- .iphone-6s.iphone-6s-space-gray
+          //-   //- video(src='/img/work/passwordless/movie.mov', autoplay)
+          //-   img(src="/img/work/passwordless/lock-3.png")
+
+          .iphone-6s.iphone-6s-space-gray
+            //- video(src='/img/work/passwordless/movie.mov', autoplay)
+            img(src="/img/work/passwordless/lock-2.png")
+
+
+
+      section.item.item-webtask.section.fp-section
+        .slide
+          .slide-title
+            h2 Webtask
+            p UI Design and Development
+          img(src="/img/work/webtask/1.png")
+
+        .slide
+          .slide-title
+            h2 Webtask
+            p UI Design and Development
+          img(src="/img/work/webtask/2.png")
+
+        .slide
+          img(src="/img/work/webtask/3.png")
+
+        .slide
+          img(src="/img/work/webtask/4.png")
+
+
+      section.item.item-auth0.section.fp-section
+        .slide
+
+          .slide-title
+            h2 Auth0 Dashboard
+            p UI Design and Development
+
+          img(src="/img/work/auth0/auth0-1.png")
+
+        .slide
+
+          .slide-title
+            h2 Auth0 Passwordless
+            p UI Design and Development
+
+          img(src="/img/work/auth0/auth0-2.png")
+
+      footer.site-footer.section.fp-auto-height
+        .container
+
+          .social-icons
+            a(href="").fa.fa-github
+            a(href="").fa.fa-medium
+            a(href="").fa.fa-twitter
+    script.
+
+      // Google Analytics: change UA-XXXXX-X to be your site's ID.
+
+      //- (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      //- function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      //- e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      //- e.src='//www.google-analytics.com/analytics.js';
+      //- r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      //- ga('create','UA-XXXXX-X','auto');ga('send','pageview');
