@@ -1,4 +1,5 @@
 @import "syntax-variables";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 .name.icon[data-name$=".svg"].icon-file-text:before, .name.icon[data-name$=".svg"].icon-file-media:before, .name.icon[data-name$=".svg"].icon-book:before{
   color: @blue !important;
@@ -17,15 +18,16 @@
 }
 
 atom-pane:not(.active) {
-    opacity: 1 !important;
+    opacity: .8 !important;
 }
 
 .tree-view{
   background: #000 !important;
+  font-family: "Roboto Mono" !important;
 }
 
 atom-pane:not(.active) atom-text-editor{
-  background: #111 !important;
+  background: @very-dark-gray !important;
 }
 
 atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shadow .gutter .line-number.git-line-modified{
