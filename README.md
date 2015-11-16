@@ -1,4 +1,4 @@
-# FramerJS Syntax Theme
+# Atom FramerJS Syntax Theme
 
 ![Screenshot](https://cldup.com/tGRn96HLEj.png)
 
