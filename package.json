@@ -1,8 +1,8 @@
 {
   "name": "framerjs-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "Syntax theme inspired by Framer JS.",
   "keywords": [
     "syntax",
     "theme"
