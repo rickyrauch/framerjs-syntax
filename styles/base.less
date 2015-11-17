@@ -1,9 +1,22 @@
 @import "syntax-variables";
 
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.eot');
+    src: url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.woff2') format('woff2'),
+         url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.woff') format('woff'),
+         url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.ttf') format('truetype'),
+         url('atom://framerjs-syntax/styles/_fonts/robotomono-regular-webfont.svg#roboto_monoregular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
   text-rendering: optimizeLegibility;
+  font-family: 'Roboto Mono';
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
