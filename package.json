@@ -5,7 +5,8 @@
   "description": "Syntax theme inspired by Framer JS.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark"
   ],
   "repository": "https://github.com/rickyrauch/framerjs-syntax",
   "license": "MIT",
