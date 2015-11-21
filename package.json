@@ -6,7 +6,10 @@
   "keywords": [
     "syntax",
     "theme",
-    "dark"
+    "dark",
+    "contrast",
+    "clean",
+    "minimal"
   ],
   "repository": "https://github.com/rickyrauch/framerjs-syntax",
   "license": "MIT",
