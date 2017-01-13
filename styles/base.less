@@ -67,12 +67,12 @@ atom-text-editor {
   }
 }
 
-atom-text-editor .search-results .marker .region{
+atom-text-editor .search-results .syntax--marker .region{
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -85,12 +85,12 @@ atom-text-editor .gutter .line-number.git-line-modified{
 }
 
 .syntax--entity {
-  &.syntax--name.type {
+  &.syntax--name.syntax--type {
     color: @orange;
     // text-decoration: underline;
   }
 
-  &.syntax--other.inherited-class {
+  &.syntax--other.syntax--inherited-class {
     color: @green;
   }
 }
@@ -106,23 +106,23 @@ atom-text-editor .gutter .line-number.git-line-modified{
     color: @syntax-text-color;
   }
 
-  &.syntax--other.special-method {
+  &.syntax--other.syntax--special-method {
     color: @blue;
   }
 
-  &.syntax--other.unit {
+  &.syntax--other.syntax--unit {
     color: @green;
   }
 }
 
-.storage {
+.syntax--storage {
   color: @purple;
 }
 
 .syntax--constant {
   color: @purple;
 
-  &.syntax--character.escape {
+  &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
@@ -134,12 +134,12 @@ atom-text-editor .gutter .line-number.git-line-modified{
     color: @purple;
   }
 
-  &.syntax--other.symbol {
+  &.syntax--other.syntax--symbol {
     color: @green;
   }
 }
 
-.important{
+.syntax--important{
   color: @red !important;
 }
 
@@ -150,12 +150,12 @@ atom-text-editor .gutter .line-number.git-line-modified{
     color: darken(@purple, 10%);
   }
 
-  &.syntax--parameter.function {
+  &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
   }
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   background-color: @red;
   color: @syntax-background-color;
 }
@@ -167,12 +167,12 @@ atom-text-editor .gutter .line-number.git-line-modified{
   &.syntax--regexp {
     color: @cyan;
 
-    .source.ruby.embedded {
+    .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
     }
   }
 
-  &.syntax--other.link {
+  &.syntax--other.syntax--link {
     color: @red;
   }
 }
@@ -206,7 +206,7 @@ atom-text-editor .gutter .line-number.git-line-modified{
     }
   }
 
-  &.syntax--section.embedded {
+  &.syntax--section.syntax--embedded {
     color: darken(@red, 10%);
   }
 
@@ -227,19 +227,19 @@ atom-text-editor .gutter .line-number.git-line-modified{
 }
 
 .syntax--entity {
-  &.syntax--name.function {
+  &.syntax--name.syntax--function {
     color: @blue;
   }
 
-  &.syntax--name.class, &.syntax--name.type.class {
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @orange;
   }
 
-  &.syntax--name.section {
+  &.syntax--name.syntax--section {
     color: @blue;
   }
 
-  &.syntax--name.tag {
+  &.syntax--name.syntax--tag {
     color: @orange;
     // text-decoration: underline;
     &.syntax--jade{
@@ -247,7 +247,7 @@ atom-text-editor .gutter .line-number.git-line-modified{
     }
   }
 
-  &.syntax--other.attribute-name {
+  &.syntax--other.syntax--attribute-name {
     color: @blue;
 
     &.syntax--jade{
@@ -283,7 +283,7 @@ atom-text-editor .gutter .line-number.git-line-modified{
   }
 }
 
-.none {
+.syntax--none {
   color: @syntax-text-color;
 }
 
@@ -306,7 +306,7 @@ atom-text-editor .gutter .line-number.git-line-modified{
     font-style: italic;
   }
 
-  &.syntax--heading .syntax--punctuation.definition.heading {
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
     color: @blue;
   }
 
@@ -322,12 +322,12 @@ atom-text-editor .gutter .line-number.git-line-modified{
     color: @orange;
   }
 
-  &.syntax--raw.inline {
+  &.syntax--raw.syntax--inline {
     color: @green;
   }
 }
 
-.source.gfm .syntax--markup {
+.syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
     color: @green;
