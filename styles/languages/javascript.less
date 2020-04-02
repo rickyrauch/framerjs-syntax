@@ -53,17 +53,7 @@
 
 }
 
-.syntax--variable {
-  &.syntax--parameter.syntax--js {
-    color: #fff;
-  }
-  &.syntax--other.syntax--property {
-    color: @blue;
-  }
-  &.syntax--js {
-    color: @cyan;
-  }
-}
+
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--js {
   color: @purple;
@@ -103,6 +93,25 @@
 //new
 
 .syntax--js{
+
+  .syntax--meta .syntax--variable {
+    color: @cyan;
+  }
+
+
+  .syntax--variable {
+    color: #fff;
+    &.syntax--parameter{
+      color: #fff;
+    }
+    &.syntax--other.syntax--property {
+      color: @blue;
+    }
+  }
+
+  .syntax--class{
+    color: @cyan;
+  }
 
   .syntax--support{
     &.syntax--function {
