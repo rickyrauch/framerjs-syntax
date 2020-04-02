@@ -110,12 +110,12 @@ atom-text-editor {
 .syntax--keyword {
   color: #FFD14A;
   &.syntax--operator {
-    color: @very-light-gray !important;
+    color: @very-light-gray;
   }
   &.syntax--control {
     color: #FF66BB;
     &.syntax--operator.syntax--css{
-      color: @blue !important;
+      color: @blue;
     }
   }
 
@@ -136,7 +136,7 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @cyan !important;
+  color: @cyan;
 }
 
 .syntax--constant {
@@ -172,7 +172,7 @@ atom-text-editor {
 }
 
 .syntax--object {
-  color: white;
+  color: @cyan;
 }
 
 .syntax--invalid.syntax--illegal {
@@ -181,7 +181,11 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @purple;
+  color: #fff;
+
+  &.syntax--quoted{
+    color: @purple;
+  }
 
 
   &.syntax--regexp {
@@ -219,7 +223,7 @@ atom-text-editor {
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue !important;
+      color: @blue;
     }
 
     &.syntax--bold {
@@ -288,13 +292,13 @@ atom-text-editor {
   &.syntax--other.syntax--attribute-name {
     color: #8df;
     &.syntax--css {
-      color: @blue !important;
+      color: @blue;
     }
 
     &.syntax--id {
       color: @blue;
       &.syntax--css {
-        color: @blue !important;
+        color: @blue;
       }
     }
   }

@@ -4,7 +4,7 @@
       color: @pink !important;
     }
     &.syntax--function {
-      color: #fff;
+      color: @cyan;
     }
     &.syntax--var {
       color: @cyan;
@@ -35,25 +35,19 @@
 
 }
 
-.syntax--support.syntax--js {
-  &.syntax--function {
-    color: @blue;
-  }
-  &.syntax--variable.syntax--variable.syntax--property {
-    color: @cyan;
-  }
-}
-
 // Punctuation
 .syntax--keyword.syntax--js {
   color: @orange;
   &.syntax--operator {
-    color: @pink !important;
+    color: #999;
     &.syntax--new {
       color: #fff;
     }
     &.syntax--assignment {
       color: #fff;
+    }
+    &.syntax--all {
+      color: @pink;
     }
   }
 
@@ -64,15 +58,15 @@
     color: #fff;
   }
   &.syntax--other.syntax--property {
-    color: @cyan;
+    color: @blue;
   }
   &.syntax--js {
-    color: #fff;
+    color: @cyan;
   }
 }
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--js {
-  color: @green;
+  color: @purple;
 }
 
 .syntax--source.syntax--js {
@@ -93,15 +87,44 @@
       color: @cyan;
     }
     &.syntax--language {
-      color: @cyan;
+      color: @pink;
     }
     &.syntax--numeric {
-      color:@purple;
+      color:@pink;
     }
   }
 
   .syntax--instance {
     color: @blue;
   }
+}
 
+
+//new
+
+.syntax--js{
+
+  .syntax--support{
+    &.syntax--function {
+      color: @orange;
+    }
+    &.syntax--variable.syntax--property {
+      color: @orange;
+    }
+
+    &.syntax--component {
+      color: @orange;
+    }
+  }
+  .syntax--entity.syntax--function{
+    color: @orange;
+  }
+
+  .syntax--keyword.syntax--control.syntax--module{
+    color: @blue;
+  }
+
+  .syntax--parameters{
+    color: @cyan;
+  }
 }
