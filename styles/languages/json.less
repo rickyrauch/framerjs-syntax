@@ -1,0 +1,18 @@
+
+
+.syntax--json {
+  &.syntax--string {
+    color:#fff;
+  }
+
+
+  &.syntax--constant.syntax--numeric {
+    color: @purple;
+  }
+
+  &.syntax--value {
+    .syntax--string.syntax--quoted.syntax--double {
+      color:@purple !important;
+    }
+  }
+}

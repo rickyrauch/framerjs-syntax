@@ -1,0 +1,79 @@
+.syntax--keyword.syntax--css.syntax--scss {
+  color: #fff;
+}
+
+// .syntax--scss.syntax--meta {
+//   color: #888;
+// }
+
+.syntax--scss, .syntax--css, .syntax--less, .syntax--sass {
+  .syntax--null {
+    color: @purple;
+  }
+
+
+  .syntax--keyword, .syntax--control {
+    color: @blue;
+  }
+
+  .syntax--string {
+    color:@purple;
+
+    .syntax--punctuation {
+      color:@purple;
+    }
+  }
+
+  .syntax--variable {
+    color:@orange;
+
+    .syntax--punctuation {
+      color: #888;
+    }
+  }
+
+  .syntax--punctuation.syntax--section.syntax--function {
+    color: @purple;
+  }
+  .syntax--punctuation {
+    color: #888;
+  }
+
+  &.syntax--id,
+  &.syntax--class,
+  &.syntax--custom,
+  &.syntax--tag {
+    color:@blue;
+  }
+
+.syntax--scss.syntax--support {
+  color: @purple;
+}
+  .syntax--entity {
+    color:@blue;
+
+    .syntax--punctuation {
+      color: #888;
+    }
+  }
+  .syntax--pseudo-class,
+  .syntax--pseudo-element {
+    color:@blue;
+  }
+
+  .syntax--support.syntax--type.syntax--property-name {
+    color:#fff;
+  }
+
+  .syntax--meta.syntax--property-name.syntax--scss {
+    color: @orange;
+  }
+
+  .syntax--important {
+    color:@pink;
+  }
+
+  .syntax--keyword.syntax--other.syntax--unit {
+    color:@purple;
+  }
+}

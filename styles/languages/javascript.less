@@ -1,0 +1,107 @@
+.syntax--storage.syntax--js {
+  &.syntax--type {
+    &.syntax--arrow {
+      color: @pink !important;
+    }
+    &.syntax--function {
+      color: #fff;
+    }
+    &.syntax--var {
+      color: @cyan;
+    }
+  }
+}
+
+&.syntax--meta {
+  color: #fff;
+  &.syntax--brace {
+    color: #888;
+  }
+  &.syntax--arguments {
+    color: @green;
+  }
+}
+
+.syntax--punctuation.syntax--js {
+  color: #888;
+}
+.syntax--punctuation.syntax--definition.syntax--js {
+  &.syntax--parameters {
+    color: #888;
+  }
+  &.syntax--arguments {
+  color: #888;
+  }
+
+}
+
+.syntax--support.syntax--js {
+  &.syntax--function {
+    color: @blue;
+  }
+  &.syntax--variable.syntax--variable.syntax--property {
+    color: @cyan;
+  }
+}
+
+// Punctuation
+.syntax--keyword.syntax--js {
+  color: @orange;
+  &.syntax--operator {
+    color: @pink !important;
+    &.syntax--new {
+      color: #fff;
+    }
+    &.syntax--assignment {
+      color: #fff;
+    }
+  }
+
+}
+
+.syntax--variable {
+  &.syntax--parameter.syntax--js {
+    color: #fff;
+  }
+  &.syntax--other.syntax--property {
+    color: @cyan;
+  }
+  &.syntax--js {
+    color: #fff;
+  }
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--js {
+  color: @green;
+}
+
+.syntax--source.syntax--js {
+  color: #fff;
+
+    &.syntax--name.syntax--type.syntax--class {
+      color: @cyan;
+    }
+  .syntax--variable {
+    &.syntax--language {
+      color: @orange;
+    }
+  }
+  .syntax--constant {
+    color: @cyan;
+
+    &.syntax--boolean {
+      color: @cyan;
+    }
+    &.syntax--language {
+      color: @cyan;
+    }
+    &.syntax--numeric {
+      color:@purple;
+    }
+  }
+
+  .syntax--instance {
+    color: @blue;
+  }
+
+}
