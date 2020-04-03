@@ -172,7 +172,7 @@ atom-text-editor {
 }
 
 .syntax--object {
-  color: @cyan;
+  color: @light-blue;
 }
 
 .syntax--invalid.syntax--illegal {
@@ -189,7 +189,7 @@ atom-text-editor {
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @light-blue;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -273,7 +273,7 @@ atom-text-editor {
 
   &.syntax--other {
     &.syntax--inherited-class {
-      color: @cyan;
+      color: @light-blue;
     }
   }
 
@@ -286,7 +286,7 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.syntax--other.syntax--attribute-name {
@@ -348,6 +348,7 @@ atom-text-editor {
 
   &.syntax--italic {
     color: @purple;
+    font-style: normal;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
@@ -390,4 +391,8 @@ atom-text-editor {
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name{
+  font-style: normal !important;
 }

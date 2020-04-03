@@ -1,13 +1,13 @@
 .syntax--storage.syntax--js {
   &.syntax--type {
     &.syntax--arrow {
-      color: @pink !important;
+      color: @pink;
     }
     &.syntax--function {
-      color: @cyan;
+      color: @light-blue;
     }
     &.syntax--var {
-      color: @cyan;
+      color: @light-blue;
     }
   }
 }
@@ -49,7 +49,6 @@
       color: @pink;
     }
   }
-
 }
 
 
@@ -62,7 +61,7 @@
   color: #fff;
 
     &.syntax--name.syntax--type.syntax--class {
-      color: @cyan;
+      color: @light-blue;
     }
   .syntax--variable {
     &.syntax--language {
@@ -70,10 +69,10 @@
     }
   }
   .syntax--constant {
-    color: @cyan;
+    color: @light-blue;
 
     &.syntax--boolean {
-      color: @cyan;
+      color: @light-blue;
     }
     &.syntax--language {
       color: @pink;
@@ -94,7 +93,7 @@
 .syntax--js{
 
   .syntax--meta .syntax--variable {
-    color: @cyan;
+    color: @light-blue;
   }
 
 
@@ -133,6 +132,10 @@
   }
 
   .syntax--parameters{
-    color: @cyan;
+    color: @light-blue;
   }
+}
+
+.syntax--meta.syntax--tag.syntax--jsx{
+  color: white;
 }
